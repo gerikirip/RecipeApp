@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipeApp.RecipePage">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label x:Name="_titleLabel" Text="RecipeName"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                FontSize="20"
+                FontFamily=""
+                FontAttributes="Bold"/>
+            <StackLayout Grid.Row="1">
+                <Frame BorderColor="Beige" CornerRadius="30" BackgroundColor="Gray">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Orientation="Vertical" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start">
+                            <Label Text="Értékelés:"/>
+                            <Label x:Name="_rating" Text="Rating"/>
+                                <StackLayout Orientation="Horizontal">
+                                <Label BindingContext="{x:Reference _ratingStepper}" Text="{Binding Value}" />
+                                <Button Text="Értékel" x:Name="rateButton" Clicked="rateButton_Clicked"/>
+                                </StackLayout>
+                            <Stepper x:Name="_ratingStepper" Minimum="0" Maximum="5" Increment="0.5"/>
+                         </StackLayout>
+                        <StackLayout Orientation="Vertical" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label Text="Elkészítési idő:"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label x:Name="_prepTime" Text="PrepTime"/>
+                                <Label >perc</Label>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+                            <Label Margin="0,6,0,0" Text="Kedvenc:"/>
+                            <CheckBox x:Name="_favCheck" Color="Pink" Margin="0,-5,5,0" HorizontalOptions="End" CheckedChanged="_favCheck_CheckedChanged"/>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            <Frame BorderColor="Beige" Grid.Row="2" BackgroundColor="Brown" CornerRadius="60">
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="Hozzávalók:" HorizontalOptions="Center"/>
+                   <StackLayout x:Name="_ingredients">
+
+                    </StackLayout>
+                    <StackLayout x:Name="_finished_ings">
+                            
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Beige" Grid.Row="3" BackgroundColor="DarkRed" CornerRadius="60">
+                <StackLayout HorizontalOptions="Center">
+                    <Label x:Name="s" Text="Lépések:" HorizontalOptions="Center"/>
+                    <StackLayout x:Name="_steps">
+
+                    </StackLayout>
+                    <StackLayout x:Name="_finished_steps">
+
+                    </StackLayout>
+            </StackLayout>
+            </Frame>
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

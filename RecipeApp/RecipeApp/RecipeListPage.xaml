@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipeApp.RecipeListPage"
+             Title="Receptek">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="16" Margin="0,-16,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="_searchEntry" Completed="_searchEntry_Completed"></Entry>
+                <Button x:Name="_searchButton" Text="Keresés" Grid.Column="1" Clicked="_searchButton_Clicked"></Button>
+                <CheckBox x:Name="_favCheck" Color="Pink" Grid.Column="2"/>
+                <Label Grid.Column="3" Margin="-10,5,0,0">Kedvenc</Label>
+            </Grid>
+        </Frame>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout x:Name="_recipeList">
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

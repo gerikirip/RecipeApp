@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RecipeApp"
+             x:Class="RecipeApp.MenuPage"
+             Title="Menu">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="RecipeApp" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" />
+
+            <ScrollView Grid.Row="1" Orientation="Vertical">
+                <StackLayout>
+                    <ListView x:Name="_listView" x:FieldModifier="public">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type local:FlyoutPageItem}">
+                                <local:FlyoutPageItem Title="SearchName" IconSource="" TargetPage="{x:Type local:RecipeListPage}" />
+                                <local:FlyoutPageItem Title="SearchIngredient" IconSource="" TargetPage="{x:Type local:IngredientPage}" />
+                                <local:FlyoutPageItem Title="NewRecipe" IconSource="" TargetPage="{x:Type local:NewRecipePage}" />
+                            </x:Array>
+                        </ListView.ItemsSource>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="5,10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30"/>
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image Source="{Binding IconSource}" />
+                                        <Label Grid.Column="1" Text="{Binding Title}" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

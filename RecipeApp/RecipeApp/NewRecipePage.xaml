@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipeApp.NewRecipePage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout x:Name="_message">
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Label>Név:</Label>
+                <Entry x:Name="_nameEntry" Placeholder="név"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                <Label>Elkészítési idő:</Label>
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="_prepTimeEntry" WidthRequest="40" Placeholder="10"/>
+                    <Label Margin="10">perc</Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="3">
+                <Label>Alapanyag:</Label>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Grid.Row="3">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Margin="10">Név:</Label>
+                        <Entry x:Name="_ingNameEntry" HorizontalOptions="FillAndExpand" Placeholder="alap"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Margin="10">Mennyiség:</Label>
+                        <Entry x:Name="_ingAmountEntry" HorizontalOptions="FillAndExpand" Placeholder="1"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Margin="10">Mértékegység:</Label>
+                        <Entry x:Name="_ingUnitEntry" HorizontalOptions="FillAndExpand" Placeholder="db"/>
+                    </StackLayout>
+                </StackLayout>
+                <Button HorizontalOptions="Start" x:Name="_addIngredientButton" Text="Alapanyag hozzáadás" Clicked="_addIngredientButton_Clicked"></Button>
+                <ScrollView>
+                    <StackLayout x:Name="_ingredientList">
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout Grid.Row="4">
+                <Entry x:Name="_stepEntry" Placeholder="lépés" Completed="_stepEntry_Completed"/>
+                <Button x:Name="_addStepButton" Text="Lépés hozzáadás" HorizontalOptions="Start" Clicked="_addStepButton_Clicked"></Button>
+                <ScrollView>
+                    <StackLayout x:Name="_stepList">
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout Grid.Row="5">
+                <Button HorizontalOptions="Center" x:Name="_addRecipeButton" Text="Recept hozzáadás" Clicked="_addRecipeButton_Clicked" FontAttributes="Bold" FontSize="Large"></Button>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,249 @@
+{
+  "recipes": [
+    {
+      "recipeid": 1,
+      "name": "paradicsomleves",
+      "minutes": 23,
+      "favourite": false,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "paradicsomlé",
+          "amount": 7,
+          "unit": "dl"
+        },
+        {
+          "name": "finomliszt",
+          "amount": 3,
+          "unit": "evőkanál"
+        },
+        {
+          "name": "napraforgó olaj",
+          "amount": 3,
+          "unit": "evőkanál"
+        },
+        {
+          "name": "vöröshagyma",
+          "amount": 1,
+          "unit": "fej"
+        },
+        {
+          "name": "cukor",
+          "amount": 3,
+          "unit": "evőkanál"
+        },
+        {
+          "name": "só",
+          "amount": 1,
+          "unit": "csipet"
+        },
+        {
+          "name": "bors",
+          "amount": 1,
+          "unit": "csipet"
+        },
+        {
+          "name": "tészta",
+          "amount": 20,
+          "unit": "dkg"
+        }
+      ],
+      "steps": [
+        "Az olajból és a lisztből rántást készítünk.",
+        "Felöntjük a hideg paradicsomlével, és elkeverjük.",
+        "Beletesszük a hagymát, ízlés szerint adunk hozzá cukrot, sót, borsot.",
+        "Felforraljuk, forralás után kb. 10 percig főzzük.",
+        "A betűtésztát sós vízben kifőzzük, csak tálaláskor tegyük a levesbe, mert megszívja magát.",
+        "Ha később felmelegítjük, egy kis vizet tegyünk bele, mert besűrűsödik."
+      ]
+    },
+    {
+      "recipeid": 2,
+      "name": "édes palacsinta",
+      "minutes": 35,
+      "favourite": false,
+      "rating": 4.9,
+      "ingredients": [
+        {
+          "name": "tojás",
+          "amount": 3,
+          "unit": "db"
+        },
+        {
+          "name": "cukor",
+          "amount": 4,
+          "unit": "evőkanál"
+        },
+        {
+          "name": "finomliszt",
+          "amount": 12,
+          "unit": "púpozott evőkanál"
+        },
+        {
+          "name": "vaníliás cukor",
+          "amount": 1,
+          "unit": "csomag"
+        },
+        {
+          "name": "só",
+          "amount": 1,
+          "unit": "teáskanál"
+        },
+        {
+          "name": "napraforgó olaj",
+          "amount": 0.5,
+          "unit": "dl"
+        },
+        {
+          "name": "tej",
+          "amount": 480,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        "A tojásokat elkeverjük a cukorral, sóval, vanília cukorral.",
+        "Hozzáadjuk a lisztet, majd lassanként a tejet, folyamatos kevergetés mellett.",
+        "Végül beleöntjük az olajat.",
+        "Közepes lángon sütjük."
+      ]
+    },
+    {
+      "recipeid": 3,
+      "name": "paradicsomos káposzta",
+      "minutes": 60,
+      "favourite": false,
+      "rating": 4.1,
+      "ingredients": [
+        {
+          "name": "paradicsomlé",
+          "amount": 8,
+          "unit": "dl"
+        },
+        {
+          "name": "káposzta",
+          "amount": 80,
+          "unit": "dkg"
+        },
+        {
+          "name": "napraforgó olaj",
+          "amount": 3,
+          "unit": "evőkanál"
+        },
+        {
+          "name": "vöröshagyma",
+          "amount": 1,
+          "unit": "fej"
+        },
+        {
+          "name": "cukor",
+          "amount": 3,
+          "unit": "teáskanál"
+        },
+        {
+          "name": "só",
+          "amount": 1.5,
+          "unit": "teáskanál"
+        },
+        {
+          "name": "finomliszt",
+          "amount": 3,
+          "unit": "púpozott evőkanál"
+        }
+      ],
+      "steps": [
+        "A káposztát külső leveleitől megfosztjuk, laskára vágjuk.",
+        "A hagymát felkockázzuk.",
+        "A káposztát a hagymával együtt egy kevés vízben feltesszük főni, hozzáöntjük a paradicsomlét, sózzuk, cukrozzuk.",
+        "Miután megpuhult a káposzta, berántjuk a főzeléket.",
+        "A rántáshoz a lisztet a olajban zsemleszínűre pirítjuk. Hideg vízzel felengedjük, és szűrőn keresztül a káposztához öntjük.",
+        "Folyamatosan kevergetjük, míg besűrűsödik."
+      ]
+    },
+    {
+      "recipeid": 4,
+      "name": "egyszerű muffin",
+      "minutes": 30,
+      "favourite": true,
+      "rating": 4.8,
+      "ingredients": [
+        {
+          "name": "finomliszt",
+          "amount": 2,
+          "unit": "bögre"
+        },
+        {
+          "name": "cukor",
+          "amount": 1,
+          "unit": "bögre"
+        },
+        {
+          "name": "tej",
+          "amount": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "napraforgó olaj",
+          "amount": 125,
+          "unit": "ml"
+        },
+        {
+          "name": "tojás",
+          "amount": 1,
+          "unit": "db"
+        },
+        {
+          "name": "sütőpor",
+          "amount": 1,
+          "unit": "csomag"
+        }
+      ],
+      "steps": [
+        "A lisztet a sütőporral elvegyítjük.",
+        "A tojást habosra keverjük és hozzáadjuk a cukrot, valamint a tejet és az olajat is.",
+        "Végül az egészet elkeverjük.",
+        "A muffinformákat kivajazzuk vagy muffinpapírral béleljük.",
+        "A masszát a formákba öntjük és 175-180 fokon tűpróbáig sütjük."
+      ]
+    },
+    {
+      "recipeid": 5,
+      "name": "egyszerű süti",
+      "minutes": 10,
+      "favourite": false,
+      "rating": 3.3,
+      "ingredients": [
+        {
+          "name": "finomliszt",
+          "amount": 3,
+          "unit": "evőkanál"
+        },
+        {
+          "name": "cukor",
+          "amount": 3,
+          "unit": "evőkanál"
+        },
+        {
+          "name": "tej",
+          "amount": 3,
+          "unit": "evőkanál"
+        },
+        {
+          "name": "tojás",
+          "amount": 1,
+          "unit": "db"
+        },
+        {
+          "name": "sütőpor",
+          "amount": 1,
+          "unit": "teáskanál"
+        }
+      ],
+      "steps": [
+        "Kis műanyag edénybe tesszük a tejet.",
+        "Hozzáadjuk a lisztet, a cukrot, a sütőport.",
+        "Az egészet jól elkeverjük.",
+        "A mikróba tesszük 3 percre és kész is van."
+      ]
+    }
+  ]
+}
